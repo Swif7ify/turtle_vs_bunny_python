@@ -107,7 +107,7 @@ class Game:
         self.canvas.create_image(self.width //2 - 20, self.height//2 - 170 , image=self.header_bg_image)
         self.canvas.create_image(self.width // 2 - 120 , self.height // 2 + 120, image=self.arrow_right_bg_image)
 
-    def main_screen(self):  
+    def main_screen(self):
         self.header()
 
         start_button = self.canvas.create_image(self.width //2, self.height//2 + 30 , image=self.start_button_bg_image)
@@ -129,7 +129,7 @@ class Game:
             elif self.hare.x >= self.width - 170:
                 self.win_screen("hare")
             self.root.update()
-            self.root.after(10)
+            self.root.after(20)
 
     def win_screen(self, winner):
         self.running = False
