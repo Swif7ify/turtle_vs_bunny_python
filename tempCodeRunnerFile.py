@@ -1,2 +1,0 @@
-nish):
-        return T
